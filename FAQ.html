@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ adhome</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-top: 7rem;
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px 20px;
+            font-size: 18px;
+            background-color: #e6e6e6;
+        }
+        
+        .faq-question:hover {
+            background-color: #e8e8e8;
+        }
+        
+        .faq-question .icon {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .faq-question.active .icon {
+            transform: rotate(45deg);
+            /* Rotasi tanda "+" */
+        }
+        
+        .faq-answer {
+            display: none;
+            padding: 15px 20px;
+            background-color: #fff;
+            color: #222;
+            font-size: 1.6rem;
+        }
+        
+        .faq-answer.show {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .faq-container {
+                padding: 10px;
+            }
+            .faq-question {
+                font-size: 1.5rem;
+                /* Ukuran font lebih kecil */
+                padding: 10px;
+                /* Padding disesuaikan */
+            }
+            .faq-answer {
+                font-size: 1.6rem;
+                /* Ukuran font jawaban lebih kecil */
+                padding: 10px;
+                /* Padding jawaban disesuaikan */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .faq-container {
+                margin-top: 5rem;
+            }
+            .faq-question {
+                font-size: 1.5rem;
+                /* Font lebih kecil lagi untuk layar kecil */
+                padding: 8px;
+                /* Padding lebih kecil */
+            }
+            .faq-answer {
+                font-size: 1.5rem;
+                /* Font jawaban lebih kecil */
+                padding: 8px;
+                /* Padding jawaban lebih kecil */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo"><img src="logofix.jpg" alt=""></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="kpr.html" class="nav-link">Layanan</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="official.html" class="nav-link">Official partner</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <a href="https://wa.me/62822133355?text=Halo adhome.co.id saya ingin bertanya seputar AD.Home" class="action-btn">Hubungi Kami</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">
+                <span class="icon">+</span> FAQ adhome Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur..?
+            </div>
+            <div class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, animi.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span class="icon">+</span> FAQ adhome Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur..?
+            </div>
+            <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur?</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span class="icon">+</span> FAQ adhome Lorem ipsum dolor sit amet.?
+            </div>
+            <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, dicta.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span class="icon">+</span> FAQ adhome Lorem ipsum dolor sit amet consectetur.?
+            </div>
+            <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsa.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span class="icon">+</span> FAQ adhome Lorem ipsum dolor sit amet.?
+            </div>
+            <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, cumque.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span class="icon">+</span> FAQ adhome Lorem ipsum dolor sit amet.?
+            </div>
+            <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nobis?</div>
+        </div>
+    </div>
+
+    <!-- footer section starts here  -->
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="detail">
+                    <h3><img src="logor.png" alt=""></h3>
+                    <p>Ruko River Town, JL. Celebration Boulevard Blok BA 2 No. 20. Grand Wisata Kel. Lambang Sari. Kec. Tambun Selatan. Kab. Bekasi - Jawa Barat (17510)</p>
+                    <h5>Social Media </h5>
+                    <a href="#">Official.adhome@gmail.com</a>
+                    <!--  -->
+                    <div class="social">
+                        <a href="https://www.facebook.com/username" target="_blank" class="icon" title="Facebook">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/adhome.co.id?igsh=MWtjOTBvbWk1cnFtdA==" target="_blank" class="icon" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@username" target="_blank" class="icon" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="about-us">
+                    <h4>Menu</h4>
+                    <li><a href="kpr.html">layanan</a></li>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="official.html">official partner<span>Lihat Sekarang!</span></a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </div>
+                <div class="about-us">
+                    <h4>help</h4>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </div>
+                <div class="about-us">
+                    <h4>Butuh Info?</h4>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about adhome</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </div>
+            </div>
+
+            <div class="copyright">
+
+                <h6>&copy;2025 - adhome all rights reserved</h6>
+
+
+            </div>
+        </section>
+    </footer>
+    <a href="https://wa.me/62822133355?text=Halo adhome.co.id saya ingin bertanya seputar AD.Home" class="whatsapp-float" target="_blank" title="Hubungi kami di WhatsApp">
+        <div class="whatsapp-ripple"></div>
+        <img src="iconwa.png" alt="WhatsApp">
+    </a>
+    <script src="script.js"></script>
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const icon = question.querySelector('.icon');
+                const answer = question.nextElementSibling;
+
+                // Tampilkan jawaban
+                answer.classList.toggle('show');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

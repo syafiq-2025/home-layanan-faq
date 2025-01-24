@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .ourteam {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .ourteam h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #fbb034;
+        }
+        
+        .ourteam p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #ccc;
+        }
+        
+        .atb-team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .rwo {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .mombor {
+            background-color: #2c2c2c;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: width 0.3s ease;
+        }
+        
+        .mombor img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        
+        .mombor h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #fbb034;
+        }
+        
+        .mombor p {
+            margin: 0;
+            font-size: 14px;
+            color: #aaa;
+        }
+        /* Media Query for small devices */
+        
+        @media (max-width: 768px) {
+            .mombor {
+                width: 200px;
+                /* Reduce the card width */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .mombor {
+                width: 250px;
+                /* Further reduce the card width for very small devices */
+            }
+            .mombor h3 {
+                font-size: 16px;
+            }
+            .mombor p {
+                font-size: 12px;
+            }
+        }
+        /* Specific rules for the CEO row */
+        
+        .seo-raw {
+            flex-wrap: nowrap;
+            /* Ensure Ari and Dendy stay in one row */
+            gap: 15px;
+            /* Adjust gap for smaller screens */
+        }
+        
+        @media (max-width: 480px) {
+            .seo-raw {
+                justify-content: space-around;
+                width: 320px;
+                gap: 20px;
+                /* Adjust alignment for small devices */
+            }
+            .seo-raw .mombor {
+                display: flex;
+                /* Gunakan flexbox */
+                flex-direction: column;
+                /* Atur elemen dalam kolom (default untuk flexbox) */
+                align-items: center;
+                /* Pastikan semua elemen di tengah */
+                text-align: center;
+                /* Pusatkan teks */
+            }
+            .seo-raw .mombor h3 {
+                font-size: 0.7rem;
+                /* Ukuran font kecil */
+                margin: 0;
+                /* Pastikan tidak ada margin tambahan */
+                line-height: 1.2;
+                /* Atur jarak antar baris untuk teks kecil */
+            }
+            .seo-raw .mombor p {
+                font-size: 0.6rem;
+                /* Ukuran font proporsional */
+                margin-top: 5px;
+                /* Jarak atas untuk teks tambahan */
+                margin-bottom: 0;
+                line-height: 1.2;
+                /* Jarak antar baris */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="ourteam">
+        <h2>Our Team</h2>
+        <p>Dedicated to providing expertise in digital property and banking in Indonesia.</p>
+        <div class="atb-team">
+            <!-- Row for Ari and Dendy -->
+            <div class="rwo seo-raw">
+                <div class="mombor">
+                    <img src="https://via.placeholder.com/100" alt="Ari Andriyana">
+                    <h3>Ari Andriyana SE MM</h3>
+                    <p>CEO, Founder</p>
+                </div>
+                <div class="mombor">
+                    <img src="https://via.placeholder.com/100" alt="Dendy Pebrianto">
+                    <h3>Dendy Pebrianto SE MM</h3>
+                    <p>CEO, Founder</p>
+                </div>
+            </div>
+            <!-- Row for other team members -->
+            <div class="rwo">
+                <div class="mombor">
+                    <img src="https://via.placeholder.com/100" alt="Linda Yanurita">
+                    <h3>Linda Yanurita</h3>
+                    <p>Property Consultant</p>
+                </div>
+                <div class="mombor">
+                    <img src="https://via.placeholder.com/100" alt="Deni Erlangga">
+                    <h3>Deni Erlangga. S</h3>
+                    <p>Property Consultant</p>
+                </div>
+                <div class="mombor">
+                    <img src="https://via.placeholder.com/100" alt="Syafiq">
+                    <h3>Syafiq</h3>
+                    <p>Property Consultant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
